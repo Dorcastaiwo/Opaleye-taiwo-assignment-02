@@ -4,7 +4,7 @@ const assignment = {};
 // ========================
 
 
-/**
+/** 
  * Challenge - 1
  * 
  * Calculate and return the sum of the numbers in an array.
@@ -14,9 +14,12 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    const sum = arrayOfNumbers.reduce((accumulator, value) => {
+        return accumulator + value;
+      }, 0);
+    return sum;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+ assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
